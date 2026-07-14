@@ -27,3 +27,19 @@ elif choice == "2":
             print(name,":", marks)
 
 #Check result    
+
+elif choice = "3":
+    name = input("Enter student name:")
+
+    if name in student:
+        marks = student[name]
+
+        if marks >= 40:
+            print("PASS")
+
+        else:
+            print("FAIL") 
+
+    else:
+        print("Student not found!")
+
