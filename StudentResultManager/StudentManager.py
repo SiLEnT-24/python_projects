@@ -43,3 +43,8 @@ elif choice = "3":
     else:
         print("Student not found!")
 
+elif Choice == "4":
+    print("Exiting...")
+    break
+else:
+    print("invalid input")
