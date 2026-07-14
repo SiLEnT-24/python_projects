@@ -13,7 +13,7 @@ choice = input("Enter your choice : ")
 
 if choice == "1":
     name = input("Enter student name: ")
-    marks = marks(input("Enter marks: "))
+    marks = int(input("Enter marks: "))
     student[name] = marks
     print(f"{name} Successfully Added!")
 
@@ -32,7 +32,7 @@ elif choice = "3":
     name = input("Enter student name:")
 
     if name in student:
-        marks = student[name]
+        mark = student[name]
 
         if marks >= 40:
             print("PASS")
