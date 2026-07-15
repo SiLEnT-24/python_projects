@@ -6,7 +6,7 @@ passwords = {}
 # load exiting password file
 
 try:
-    with open ("Password.text", "r") as file:
+    with open ("PasswordManager/Passwords.text", "r") as file:
         for line in file :
             website,pwd = line.strip().split(":")
             passwords[website] = pwd
@@ -33,7 +33,7 @@ while True:
 
         passwords[site] = pwd
 
-        with open("Passwords.text", "a")as file:
+        with open("PasswordManager/Passwords.text", "a")as file:
             file.write(f"{site}:{pwd}\n")
 
         print("Saved!")
