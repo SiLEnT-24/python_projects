@@ -46,12 +46,12 @@ while True:
             for site, pwd in passwords.items():
                  print(site,":",pwd)
 
-        elif choice == "3":
-            print("Generated Password", generate_password())
-        
-        elif choice == "4":
-            print("exit...")
-            break
+    elif choice == "3":
+        print("Generated Password", generate_password())
+    
+    elif choice == "4":
+        print("exit...")
+        break
 
-        else:
-            print("Invalid input")
+    else:
+        print("Invalid input")
