@@ -1,6 +1,5 @@
 import numpy as np
-import imageio
-import scipy.ndimage
+import imageio.v2 as imageio
 import cv2
 
 img = "rose12.png"
@@ -19,10 +18,10 @@ def dodge(front, back):
 ss = imageio.imread(img)
 gray = rgb2gray(ss)
 
-i = 255-gray
+i = 255 - gray
 
-blur = scipy.ndimage.filters.gaussian_filter(i, sigma = 15)
+blur = cv2.GaussianBlur(i.astype(np.float32), (0, 0), sigmaX=15)
 
-r = dodge(blur,gray)
+r = dodge(blur, gray)
 
-cv2.imwrite('rose.png',r)
+cv2.imwrite('rose.png', r)
