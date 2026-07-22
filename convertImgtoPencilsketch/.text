@@ -1,0 +1,9 @@
+Requirement of this project 
+
+Need 4 libraries
+
+1. numpy -  pip install numpy
+2. imageio - pip install imageio
+3. scipy
+4. opencv - pip install opencv-python
+5. download pip install image
