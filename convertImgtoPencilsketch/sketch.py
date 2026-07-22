@@ -16,4 +16,12 @@ def dodge(front, back):
 
     return final_sketch.astype('uint8')
 
-ss = imageio
+ss = imageio.imread(img)
+gray = rgb2gray(ss)
+
+i = 255-gray
+
+blur = scipy.ndimage.filters.gaussian_filter(i, sigma = 15)
+
+r = dodge(blur,gray)
+
